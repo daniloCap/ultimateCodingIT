@@ -1,14 +1,25 @@
+[INFO] -------------------------------------------------------------
+[ERROR] Source option 5 is no longer supported. Use 6 or later.
+[ERROR] Target option 1.5 is no longer supported. Use 1.6 or later.
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.368 s
+[INFO] Finished at: 2022-07-20T16:18:50+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project swagger-coverage-karate: Compilation failure: Compilation failure: 
+[ERROR] Source option 5 is no longer supported. Use 6 or later.
+[ERROR] Target option 1.5 is no longer supported. Use 1.6 or later.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+zdchaen@seliiuvd01810[16:18][Downloads/swagger-coverage-master/swagger-coverage-karate]$ 
 
-com.jayway.jsonpath:com.jayway.jsonpath:pom:0.8.1.wso2v1 failed to transfer from http://0.0.0.0/ during a previous attempt. This failure was cached in the local repository and resolution is not reattempted until the update interval of maven-default-http-blocker has elapsed or updates are forced. Original error: Could not transfer artifact com.jayway.jsonpath:com.jayway.jsonpath:pom:0.8.1.wso2v1 from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [sonom (http://ieatrcxb3788.athtem.eei.ericsson.se:8081/artifactory/sonom-virtual, default, releases+snapshots), prototype (http://eselivm2v238l.lmera.ericsson.se:8081/nexus/content/repositories/prototype, default, releases+snapshots), central-uk-nonproxy (http://uk.maven.org/maven2/, default, releases+snapshots)]
-
-Since Maven 3.8.1 http repositories are blocked.
-
-Possible solutions:
-- Check that Maven settings.xml does not contain http repositories
-- Check that Maven pom files do not contain http repository http://ieatrcxb3788.athtem.eei.ericsson.se:8081/artifactory/sonom-virtual
-- Check that Maven pom files do not contain http repository http://eselivm2v238l.lmera.ericsson.se:8081/nexus/content/repositories/prototype
-- Check that Maven pom files do not contain http repository http://uk.maven.org/maven2/
-- Add a mirror(s) for http://ieatrcxb3788.athtem.eei.ericsson.se:8081/artifactory/sonom-virtual, http://eselivm2v238l.lmera.ericsson.se:8081/nexus/content/repositories/prototype, http://uk.maven.org/maven2/ that allows http url in the Maven settings.xml
-- Downgrade Maven to version 3.8.1 or earlier in settings
 
 
